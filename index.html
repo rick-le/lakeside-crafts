@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lakeside Crafts | Handmade goods from Kisumu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <header id="site-header"></header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Handmade in Kisumu, Kenya</p>
+      <h1>Crafts made on the shores of Lake Victoria</h1>
+      <p>Baskets, jewellery and home decor from local artisans. Pay with M-Pesa and get delivery across Kenya.</p>
+      <a href="#shop" class="btn">Shop now</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div><strong>🚚 Fast delivery</strong><span>Free over KSh 5,000</span></div>
+    <div><strong>📱 Pay with M-Pesa</strong><span>Safe and simple</span></div>
+    <div><strong>🤝 Fair trade</strong><span>Artisans earn fairly</span></div>
+    <div><strong>↩️ 7-day returns</strong><span>Shop with confidence</span></div>
+  </section>
+
+  <main class="container" id="shop">
+    <h2>Our products</h2>
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Search products...">
+      <div id="chips" class="chips"></div>
+    </div>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="muted" hidden>No products match your search.</p>
+  </main>
+
+  <section class="newsletter">
+    <h2>Get 10% off your first order</h2>
+    <form id="news-form">
+      <input type="email" id="news-email" placeholder="Your email address" required>
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer id="site-footer"></footer>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

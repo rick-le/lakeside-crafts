@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Lakeside Crafts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+
+  <main class="container contact">
+    <div>
+      <h2>Contact us</h2>
+      <p>Questions about an order or a custom design? Send us a message and we will reply within 24 hours.</p>
+      <ul class="info">
+        <li>📍 Oginga Odinga Street, Kisumu, Kenya</li>
+        <li>📞 +254 700 000 000</li>
+        <li>✉️ hello@lakesidecrafts.example</li>
+        <li>🕘 Mon–Sat, 8:00 am – 6:00 pm</li>
+      </ul>
+      <iframe title="Map of Kisumu" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=34.70%2C-0.13%2C34.82%2C-0.05&layer=mapnik"></iframe>
+    </div>
+
+    <form id="contact-form" class="card-form" novalidate>
+      <label>Your name<input id="m-name" type="text"></label>
+      <label>Email<input id="m-email" type="email"></label>
+      <label>Topic
+        <select id="m-topic">
+          <option>Order enquiry</option>
+          <option>Custom order</option>
+          <option>Wholesale</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>Message<textarea id="m-msg" rows="5"></textarea></label>
+      <p id="m-error" class="error" hidden></p>
+      <button class="btn full" type="submit">Send message</button>
+      <p id="m-ok" class="success" hidden>Thank you! Your message has been received.</p>
+    </form>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
